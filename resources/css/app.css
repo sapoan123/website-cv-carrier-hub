@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    --font-display: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+    --color-spotify-green: #1ed760;
+    --color-spotify-green-hover: #1fdf64;
+    --color-spotify-green-active: #169c46;
+
+    --color-near-black: #121212;
+    --color-dark-surface: #181818;
+    --color-mid-dark: #1f1f1f;
+    --color-dark-card: #252525;
+    --color-mid-card: #272727;
+
+    --color-text-base: #ffffff;
+    --color-text-secondary: #b3b3b3;
+    --color-text-near-white: #cbcbcb;
+    --color-text-light: #fdfdfd;
+
+    --color-negative-red: #f3727f;
+    --color-warning-orange: #ffa42b;
+    --color-announcement-blue: #539df5;
+
+    --color-border-gray: #4d4d4d;
+    --color-light-border: #7c7c7c;
+    --color-separator: #b3b3b3;
+    --color-light-surface: #eeeeee;
+    --color-green-border: #1db954;
+
+    --radius-pill: 9999px;
+    --radius-button: 500px;
+    --radius-card: 8px;
+    --radius-card-lg: 6px;
+
+    --color-canvas: #f9fafb;
+    --color-canvas-soft: #f3f4f6;
+    --color-ink: #0f172a;
+    --color-primary: #3b82f6;
+    --color-primary-active: #2563eb;
+    --color-primary-pale: #eff6ff;
+    --color-on-primary: #ffffff;
+    --color-mute: #94a3b8;
+    --color-body: #475569;
+    --color-positive: #22c55e;
+    --color-positive-deep: #166534;
+    --color-negative: #ef4444;
+    --color-negative-deep: #991b1b;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        font-feature-settings: "ss03";
+    }
+
+    body {
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    [x-cloak] {
+        display: none !important;
+    }
+}

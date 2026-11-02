@@ -1,0 +1,251 @@
+# PRODUCT REQUIREMENTS DOCUMENT (PRD)
+
+# CVHub Career
+
+## Platform Penyedia Template CV Gratis & CV Builder Online
+
+---
+
+**Document Version** : 2.0
+
+**Status** : Draft
+
+**Framework** : Laravel 12
+
+**Frontend** : Blade + php
+
+**Backend** : Laravel 12
+
+**Database** : MySQL
+
+**Prepared By** : Development Team
+
+---
+
+# Document Information
+
+| Item            | Description            |
+| --------------- | ---------------------- |
+| Project Name    | CVHub Career           |
+| Project Type    | Web Application        |
+| Category        | CV Builder Platform    |
+| Platform        | Web Based              |
+| Framework       | Laravel 12             |
+| Database        | MySQL                  |
+|                 |                        |
+|                 |                        |
+| Template Engine | Blade                  |
+| Authentication  | Laravel Authentication |
+| Version         | 2.0                    |
+
+---
+
+# Version History
+
+| Version | Date          | Description                               |
+| ------- | ------------- | ----------------------------------------- |
+| 1.0     | Initial Draft | Company Profile Landing Page              |
+| 2.0     | Current       | CV Builder Platform & Template Management |
+
+---
+
+# 1. Project Overview
+
+## 1.1 Deskripsi Proyek
+
+CVHub Career merupakan sebuah platform berbasis web yang menyediakan berbagai template *Curriculum Vitae* (CV) profesional yang dapat digunakan secara gratis oleh seluruh pengguna. Platform ini dirancang untuk membantu pencari kerja, mahasiswa, maupun profesional dalam membuat CV yang menarik, rapi, dan sesuai dengan standar rekrutmen modern.
+
+Selain menyediakan koleksi template CV, CVHub Career juga menghadirkan fitur **CV Builder** yang memungkinkan pengguna memilih template, mengisi data diri, mengedit isi CV secara langsung melalui editor online, melihat hasil perubahan secara *real-time*, serta mengunduh CV dalam format PDF tanpa perlu memiliki kemampuan desain.
+
+Sebagai media edukasi, platform ini juga menyediakan berbagai informasi dan panduan mengenai cara membuat CV yang baik dan benar. Pengguna dapat mengakses artikel, tips, serta rekomendasi penyusunan CV yang efektif, mulai dari penulisan profil diri, pengalaman kerja, pendidikan, keterampilan (*skills*), hingga kesalahan-kesalahan umum yang sebaiknya dihindari saat menyusun CV. Fitur ini bertujuan untuk membantu pengguna memahami praktik terbaik dalam pembuatan CV sehingga dapat meningkatkan peluang mereka dalam proses rekrutmen.
+
+Website terdiri atas tiga komponen utama yang saling terintegrasi, yaitu **Landing Page**, **CV Builder**, dan **Dashboard Admin (CMS)**. Landing Page berfungsi sebagai media informasi dan edukasi, CV Builder menjadi fitur utama untuk pembuatan CV, sedangkan Dashboard Admin digunakan untuk mengelola seluruh konten website, template CV, materi edukasi, serta berbagai data yang ditampilkan kepada pengguna.
+
+Seluruh data yang ditampilkan pada Landing Page, CV Builder, maupun Dashboard Admin tersimpan di dalam database MySQL dan dikelola secara dinamis menggunakan framework Laravel 12. Dengan demikian, administrator dapat melakukan perubahan konten secara real-time tanpa perlu melakukan perubahan kode secara manual.
+
+---
+
+# 2. Tujuan Proyek
+
+Pembangunan CVHub Career bertujuan untuk:
+
+* Menyediakan platform pembuatan CV yang mudah digunakan.
+* Menyediakan template CV profesional secara gratis.
+* Membantu pengguna membuat CV yang rapi dan ATS Friendly.
+* Mempermudah pengguna mengedit CV secara online.
+* Memungkinkan pengguna mengunduh CV dalam format PDF.
+* Menyediakan Dashboard Admin untuk mengelola seluruh konten website.
+* Menyediakan sistem yang mudah dikembangkan untuk penambahan template baru di masa mendatang.
+
+---
+
+# 3. Target Pengguna
+
+Platform memiliki dua jenis pengguna utama.
+
+## 3.1 Visitor
+
+Visitor merupakan pengunjung website yang belum menggunakan editor CV.
+
+Visitor dapat:
+
+* Mengakses Landing Page.
+* Melihat informasi mengenai platform.
+* Melihat daftar template CV.
+* Melihat fitur platform.
+* Membaca FAQ.
+* Menghubungi administrator melalui Contact Form.
+* Melihat preview template.
+
+Visitor tidak memiliki akses ke Dashboard Admin.
+
+---
+
+## 3.2 User
+
+User merupakan pengguna yang menggunakan fitur CV Builder.
+
+Hak akses User meliputi:
+
+* Memilih template CV.
+* Mengisi data pribadi.
+* Mengedit seluruh isi CV.
+* Mengunggah foto profil.
+* Mengubah warna template.
+* Mengubah jenis font yang tersedia.
+* Melihat preview CV secara real-time.
+* Mengunduh CV dalam format PDF.
+* Menyimpan hasil CV (opsional jika fitur akun diaktifkan).
+
+---
+
+## 3.3 Administrator
+
+Administrator bertanggung jawab mengelola seluruh isi website.
+
+Administrator memiliki hak akses untuk:
+
+* Login ke Dashboard.
+* Mengelola Landing Page.
+* Mengelola Template CV.
+* Mengelola Kategori Template.
+* Mengelola Media Library.
+* Mengelola Testimoni.
+* Mengelola FAQ.
+* Mengelola Contact Information.
+* Mengelola Contact Messages.
+* Mengelola SEO Website.
+* Mengelola Akun Admin.
+
+---
+
+# 4. Scope Project
+
+CVHub Career terdiri dari tiga modul utama.
+
+## 4.1 Landing Page
+
+Landing Page berfungsi sebagai halaman utama website yang menampilkan informasi mengenai platform.
+
+Landing Page meliputi:
+
+home: 
+
+   .   Home
+
+    .  keunggulan
+
+* Daftar Template CV
+* cara membuat cv yng benar
+* Mengapa Memilih Kami
+* Testimoni
+* FAQ
+* tentang 
+* Contact
+* Footer
+
+Fitur:
+
+* Sticky Navigation
+
+* Responsive Menu
+
+* Smooth Scrolling
+
+* Active Menu
+
+Seluruh konten bersifat dinamis dan dikelola melalui Dashboard Admin.
+
+---
+
+## 4.2 CV Builder
+
+CV Builder merupakan fitur utama platform.
+
+Pengguna dapat:
+
+* Memilih template.
+* Mengisi data CV.
+* Mengedit seluruh informasi.
+* Mengubah tampilan dasar template.
+* Melihat preview secara langsung.
+* Mengunduh hasil CV menjadi PDF.
+
+CV Builder dirancang agar mudah digunakan tanpa memerlukan kemampuan desain.
+
+---
+
+## 4.3 Dashboard Admin 
+
+Dashboard Admin digunakan untuk mengelola seluruh sistem.
+
+Fitur utama Dashboard meliputi:
+
+. Dashboard
+
+. Authentication
+
+. Hero Management
+
+. About Management
+
+. Template Category Management
+
+. CV Template Management
+
+. Advantages Management
+
+. Tutorial Management
+
+. Why Choose Us Management
+
+. Testimonials Management
+
+. FAQ Management
+
+. Contact Management
+
+. Contact Messages
+
+. Footer Management
+
+. SEO Management
+
+. Media Library
+
+. User Management
+
+Seluruh perubahan yang dilakukan melalui Dashboard akan langsung tersinkronisasi dengan Landing Page dan CV Builder tanpa perlu melakukan perubahan kode secara manual.
+
+---
+
+# 5. Project Goals
+
+Website ini dibangun dengan tujuan sebagai berikut:
+
+1. Menjadi platform pembuatan CV gratis yang mudah digunakan.
+2. Menyediakan template CV profesional dan ATS Friendly.
+3. Memberikan pengalaman editing CV yang sederhana namun modern.
+4. Memungkinkan pengguna membuat CV hanya dalam beberapa menit.
+5. Mempermudah administrator dalam mengelola konten website melalui CMS.
+6. Menghasilkan aplikasi web yang cepat, aman, responsif, dan mudah dikembangkan.
